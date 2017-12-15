@@ -7,8 +7,8 @@ spring:
         default-property-inclusion: non_null
     datasource:
         name: test
-        url: jdbc:mysql://192.168.8.254:3306/face_auth?useUnicode=true&characterEncoding=UTF8
-        username: zaka
+        url: jdbc:mysql://localhost:3306/face_auth?useUnicode=true&characterEncoding=UTF8
+        username: root
         password: mysqladmin
         # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
@@ -28,16 +28,16 @@ spring:
         maxOpenPreparedStatements: 20
     redis:
         database: 1
-        host: 192.168.8.254
+        host: 192.168.12.135
         port: 6379
-        password: myredis666
+        password: jiashun
         pool:
-            max-active: 20
+            max-active: 200
     rabbitmq:
-        host: 192.168.8.254
+        host: 192.168.12.141
         port: 5672
-        username: zkak
-        password: zkak666
+        username: jiashun
+        password: hello
 
 mybatis:
     basepackage: com.zkak.auth.mapper

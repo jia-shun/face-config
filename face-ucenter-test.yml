@@ -11,8 +11,8 @@ spring:
         default-property-inclusion: non_null
     datasource:
         name: test
-        url: jdbc:mysql://192.168.8.254:3306/face_ucenter?useUnicode=true&characterEncoding=UTF8
-        username: zaka
+        url: jdbc:mysql://localhost:3306/face_ucenter?useUnicode=true&characterEncoding=UTF8
+        username: root
         password: mysqladmin
         # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
@@ -31,10 +31,10 @@ spring:
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
     rabbitmq:
-        host: 192.168.8.254
+        host: 192.168.12.141
         port: 5672
-        username: zkak
-        password: zkak666
+        username: jiashun
+        password: hello
 mybatis:
     basepackage: com.zkak.ucenter.mapper
     xmlLocation: classpath:mapper/**/*.xml
@@ -79,9 +79,9 @@ redis:
          maxActive: 300
          maxIdle: 100
          maxWait: 1000
-    host: 192.168.8.254
+    host: 192.168.12.135
     port: 6379
-    password: myredis666
+    password: jiashun
     timeout: 2000
     # 服务或应用名
     sysName: face-ucenter
