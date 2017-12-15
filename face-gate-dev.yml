@@ -68,6 +68,10 @@ zuul:
     auth:
       path: /auth/**
       serviceId: face-auth
+    device:
+      path: /device/**
+      serviceId: face-device
+
 
 ribbon:
   eureka:
